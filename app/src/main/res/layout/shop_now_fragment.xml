@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.shop_now.ShopNow">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShopNow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/search_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#80FFD79C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/search_tab"
+                android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+                android:ems="10"
+                android:hint="Search"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="24dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:tint="#000000"
+                        app:srcCompat="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Deliver to Abhishek, Haldwani 263139"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="127dp"
+                            android:layout_height="145dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="3dp"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/icons_1" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="127dp"
+                            android:layout_height="145dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="1dp"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/icons_3" />
+
+                        <ImageView
+                            android:id="@+id/btnCartSettingsFragmentScene"
+                            android:layout_width="127dp"
+                            android:layout_height="145dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="centerInside"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                            app:layout_constraintHorizontal_bias="0.473"
+                            app:layout_constraintStart_toStartOf="@+id/imageView6"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/icons_5" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="127dp"
+                            android:layout_height="145dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="centerInside"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                            app:layout_constraintHorizontal_bias="0.477"
+                            app:layout_constraintStart_toStartOf="@+id/imageView"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/icons_4" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="127dp"
+                            android:layout_height="145dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                            app:layout_constraintStart_toEndOf="@+id/imageView"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/icons_2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/SliderDots2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_pager2"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#80FFD79C"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/dog_food" />
+
+                    <Button
+                        android:id="@+id/to_shopNowMain_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/food_bg"
+                        android:text="SHOP NOW"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

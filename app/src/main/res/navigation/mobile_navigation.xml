@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.StuffyCare.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/shop_now"
+        android:name="com.example.StuffyCare.ui.shop_now.ShopNow"
+        android:label="Shop Now"
+        tools:layout="@layout/activity_shop_now_home"/>
+
+    <fragment
+        android:id="@+id/nav_chat_with_experts"
+        android:name="com.example.StuffyCare.ui.chat_with_experts.ChatWithExperts"
+        android:label="Chat With Experts"
+        tools:layout="@layout/chat_with_experts_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_book_a_service"
+        android:name="com.example.StuffyCare.ui.book_a_service.BookAService"
+        android:label="Appointments"
+        tools:layout="@layout/book_a_fragment" />
+
+    <fragment
+        android:id="@+id/help"
+        android:name="com.example.StuffyCare.ui.help.Help"
+        android:label="Help Center"
+        tools:layout="@layout/help_fragment" />
+
+    <fragment
+        android:id="@+id/nav_test_booking"
+        android:name="com.example.StuffyCare.ui.test_booking.TestBooking"
+        android:label="Test Booking"
+        tools:layout="@layout/test_booking_fragment" />
+
+    <fragment
+        android:id="@+id/nav_my_doctors"
+        android:name="com.example.StuffyCare.ui.my_doctors.MyDoctors"
+        android:label="My Doctors"
+        tools:layout="@layout/my_doctors_fragment" />
+
+    <fragment
+        android:id="@+id/nav_reminder"
+        android:name="com.example.StuffyCare.ui.reminder.Reminder"
+        android:label="Reminder"
+        tools:layout="@layout/reminder_fragment" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.StuffyCare.ui.orders.Orders"
+        android:label="Orders"
+        tools:layout="@layout/orders_fragment" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.StuffyCare.ui.settings.Settings"
+        android:label="Settings"
+        tools:layout="@layout/settings_fragment" />
+
+
+
+
+
+
+
+</navigation>
